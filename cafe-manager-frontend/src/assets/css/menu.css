@@ -1,0 +1,305 @@
+.menuWrapper {
+    margin-top: 90px;
+}
+.menuTypeItem {
+    color: #ffffe0;
+    border-color: #ffffe0;
+    background-color: #fbedd7;
+}
+.menuTypeItem .describeMenu {
+    padding: 1rem;
+}
+
+.menuTypeItem .logoMenu {
+    padding: 1rem;
+}
+.menuTypeItem .name {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.menuTypeItem .description {
+    font-size: 1.2rem;
+}
+
+.menuTypeItem .clickShowMenu {
+    border-radius: 8px;
+    border: 1px solid #fff;
+    width: fit-content;
+    padding: 0.4rem 1.6rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.menuTypeItem .clickShowMenu:hover {
+    background: #53382c;
+    /*font-weight: 700;*/
+    color: #fff!important;
+}
+
+.menuTypeItem .logoMenu img {
+    border: 0px;
+    max-width: 100%;
+}
+
+.menuListWrapper {
+    margin-top: 90px;
+}
+
+.menuListWrapper .menuSideBar {
+    padding: 1rem;
+}
+
+.menuListWrapper .menuSideBar .menuTypeItemSidebar{
+    padding: 8px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: flex;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.menuListWrapper .menuSideBar .menuTypeItemSidebar.active{
+    background-color: #fbedd7;
+}
+
+.menuListWrapper .menuSideBar .menuTypeItemSidebar:hover{
+    background-color: #fbedd7;
+}
+
+.menuListWrapper .menuSideBar .menuTypeItemSidebar img{
+    width: 96px;
+}
+
+.menuListWrapper .menuSideBar .menuTypeItemSidebar .name{
+    color: #001529;
+    font-size: 1.2rem;
+    padding-left: 4px;
+}
+
+.menuListWrapper .menuList {
+
+}
+
+.menuListWrapper .menuList .infoMenuType {
+
+}
+
+.menuListWrapper .menuList .logoMenu img {
+    width: 100%;
+}
+
+.menuListWrapper .menuList .describeMenu .name{
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+
+.menuListWrapper .menuList .describeMenu .description{
+    font-size: 1rem;
+}
+
+.menuListTheme {
+    margin-top: 48px;
+}
+
+.menuListTheme .menuItem{
+    padding: 1rem;
+    margin-top: 48px;
+}
+
+.menuListTheme .menuItem .image {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuListTheme .menuItem .image img {
+    height: 100%;
+}
+
+.menuListTheme .menuItem .name {
+    text-align: center;
+    font-weight: 600;
+    color: #53382c;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.menuListTheme .menuItem .price {
+    text-align: center;
+    font-weight: 700;
+    color: #53382c;
+    font-size: 1.3rem;
+}
+
+.menuListTheme .menuItem .price .label{
+    font-weight: 500;
+    color: #53382c;
+    font-size: 1.2rem;
+}
+
+.menuListTheme .menuItem .detail{
+    text-align: center;
+    padding: 4px 0px;
+}
+
+.menuListTheme .menuItem .detail button{
+    background: #53382c;
+    color: #fff;
+}
+
+.menuDetailWrapper {
+    margin-top: 90px;
+}
+.menuDetailWrapper .menuDetailLeft .menuDetailContent {
+    padding: 1rem;
+}
+
+.menuDetailWrapper .menuDetailLeft .menuDetailContent .name {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1rem 0rem;
+    font-size: 2rem;
+}
+
+.menuDetailWrapper .menuDetailLeft .menuDetailContent .detail {
+
+}
+
+.menuDetailWrapper .menuDetailLeft .menuDetailContent .detail .detailLeft {
+    border: 1px solid #fbedd7;
+    padding: 1rem;
+}
+.menuDetailWrapper .menuDetailLeft .menuDetailContent .detail .detailLeft img {
+    width: 100%;
+}
+.menuDetailWrapper .menuDetailLeft .menuDetailContent .detail .detailRight {
+    color: #53382c;
+    padding: 1rem;
+}
+.menuDetailWrapper .menuDetailLeft .menuDetailContent .detail .detailRight .description {
+    font-size: 1rem;
+}
+.menuDetailWrapper .menuDetailLeft .menuDetailContent .detail .detailRight .type {
+    background: #53382c;
+    width: fit-content;
+    color: #fff;
+    padding: 4px 16px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 8px 0px;
+}
+.menuDetailWrapper .menuDetailLeft .menuDetailContent .detail .detailRight .price {
+    font-weight: 700;
+    color: #53382c;
+    font-size: 1.3rem;
+}
+
+.menuDetailWrapper .menuDetailLeft .menuDetailContent .detail .detailRight .price .label{
+    font-weight: 500;
+    color: #53382c;
+    font-size: 1.2rem;
+}
+
+.menuDetailWrapper .menuDetailLeft .menuHot{
+   padding: 1rem;
+}
+
+.menuDetailWrapper .menuDetailLeft .menuHot .title{
+    font-weight: 700;
+    width: fit-content;
+    text-transform: uppercase;
+    padding: 4px 32px 4px 0px;
+    border-bottom: 4px solid #000;
+    font-size: 1.2rem;
+}
+
+.menuDetailWrapper .menuDetailRight .typeItem{
+    padding: 4px;
+    cursor: pointer;
+    margin: 8px 0px;
+}
+
+.menuDetailWrapper .menuDetailRight .typeItem:hover{
+    background-color: #FBEDD7;
+}
+
+.menuDetailWrapper .menuDetailRight .typeItem .image{
+    padding: 4px;
+}
+
+.menuDetailWrapper .menuDetailRight .typeItem .image img{
+    width: 100%;
+}
+.menuDetailWrapper .menuDetailRight .typeItem .describe{
+    color: #53382c;
+}
+
+.menuDetailWrapper .menuDetailRight .typeItem .name{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.menuDetailWrapper .menuDetailRight .typeItem .description{
+    font-size: 0.9rem;
+}
+
+.orderTableWrapper {
+    margin-top: 90px;
+}
+
+.mainBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(255,255,255,0.95);
+}
+.backgroundContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-slider {
+    position: relative;
+}
+
+.slick-dots {
+    display: none!important;
+}
+.slick-prev {
+    position: absolute;
+    top: 0;
+    right: 48px;
+    width: 48px;
+    height: 48px;
+}
+
+.slick-next {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 48px;
+}
+
+.slick-arrow svg {
+    width: 100%;
+    height: 100%;
+}
+.slick-list {
+    overflow: hidden;
+}

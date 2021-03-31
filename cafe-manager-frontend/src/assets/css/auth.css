@@ -1,0 +1,20 @@
+.authFormType div, button{
+    color: #53382c;
+}
+
+.authFormType .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.authFormType .header .title {
+    color: #53382c;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.authFormType .body .showErrorBack {
+    color: #53382c;
+}

@@ -1,0 +1,105 @@
+.tableItem {
+    padding: 16px;
+
+}
+
+.wrapper {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbedd7;
+    height: 100%;
+    position: relative;
+}
+
+.tableItem .name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tableItem .description {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.tableItem .statusLabel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 4px 8px;
+    background-color: #dff3e3;
+    color: #fff;
+    font-weight: 600;
+}
+
+.tableItem .statusLabel.free {
+    background-color: lightgreen;
+    color: #fff;
+}
+
+.tableItem .statusLabel.booked {
+    background-color: orange;
+    color: #fff;
+}
+
+
+.tableItem .statusLabel.busy {
+    background-color: red;
+    color: #fff;
+}
+
+.tableItem .book .btnBook {
+    background-color: #53382c !important;
+    color: #fff;
+    border-color: #53382c !important;
+}
+
+.tableItem .book .btnBook:hover {
+    font-weight: 600;
+}
+
+/*.tableItem .book .btnBook:focus {*/
+/*    background-color: #53382c !important;*/
+/*}*/
+
+.orderTableWrapper .auth {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 0px;
+}
+.orderTableWrapper .auth .text {
+   font-size: 1rem;
+    text-align: center;
+}
+.orderTableWrapper .auth .btnAuth {
+    color: #53382c !important;
+    border-color: #53382c !important;
+    font-weight: 600;
+    margin: 8px 0px;
+}
+
+.orderModalWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.orderModalWrapper .btnBook {
+    background-color: #53382c !important;
+    color: #fff;
+    border-color: #53382c !important;
+    margin: 8px 0px;
+}
+
+.orderModalWrapper .btnBook:hover {
+    font-weight: 600;
+}
+
+.orderModalWrapper label {
+    color: #53382c !important;
+    font-weight: 600;
+}
