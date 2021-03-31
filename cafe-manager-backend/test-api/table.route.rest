@@ -1,0 +1,44 @@
+### Get all
+GET http://localhost:4000/api/table
+
+###Save one
+POST http://localhost:4000/api/table
+Content-Type: application/json
+
+{
+    "name": "Bàn 03",
+    "description": "Bàn 4 chỗ"
+}
+
+###Book table
+PATCH http://localhost:4000/api/table/book/5fda0b4eb7ba632d0c3a234b
+Content-Type: application/json
+
+{
+    "user": "5f954e17e3c51f2a6010f83a",
+    "time": "2020-12-15T16:00:00.714Z"
+}
+
+###Update
+PATCH http://localhost:4000/api/table/5fb14c4c2050e905885eebf7
+Content-Type: application/json
+
+{
+    "name": "bàn 10",
+    "description": "Hi"
+}
+
+###
+GET http://localhost:4000/api/table/5fda09ddb7ba632d0c3a2342
+
+###
+DELETE http://localhost:4000/api/table/5fb12f2a0dc0fa0accf4037a
+###
+
+DELETE http://localhost:4000/api/table/5fb0131340742139a0de55a5
+
+###Update status
+PATCH  http://localhost:4000/api/table/status/free/5fb2a8cf039b7554187ec327
+###
+
+PATCH http://localhost:4000/api/table/deactive/5fb0b153f373bc56c894f048

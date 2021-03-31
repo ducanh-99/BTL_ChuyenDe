@@ -1,0 +1,21 @@
+POST http://localhost:4000/api/auth/register
+Content-Type: application/json
+
+{
+    "name": "Đỗ Văn Cường 99",
+    "email": "dvcuong94@gmail.com",
+    "password": "12345678",
+    "address" : "Hà Nội, Việt Nam",
+    "phone" : "0985788650",
+    "role" : "cashier"
+}
+
+###
+
+POST http://localhost:4000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "dvcuong99@gmail.com",
+    "password": "dvcuong99"
+}

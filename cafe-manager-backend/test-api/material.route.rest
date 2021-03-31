@@ -1,0 +1,32 @@
+
+GET http://localhost:4000/api/material
+
+###
+
+
+POST http://localhost:4000/api/importMaterial/
+Content-Type: application/json
+
+{
+    "name": "Chè",
+    "name_type" : "Chè thái nguyên",
+    "description" : "Nhập hàng lần 2",
+    "unit" : "kg",
+    "amountInput" : 2,
+    "priceperunit" : 10000
+}
+###
+PATCH  http://localhost:4000/api/updateImportMaterial/5fd916fa1ad1483a04ec4e87
+Content-Type: application/json
+
+{
+    "name": "Chè",
+    "name_type" : "Chè tươi",
+    "description" : "Nhập hàng",
+    "unit" : "3",
+    "amountOutput" : 1,
+    "amountInput" : 1
+}
+
+###
+DELETE   http://localhost:4000/api/material/5fb2d96034da922398c9bb12

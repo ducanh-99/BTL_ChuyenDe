@@ -1,0 +1,32 @@
+### Get all các loại sản phẩm
+GET http://localhost:4000/api/type
+
+###Save one: tạo mới 1 loại sản phẩm
+POST http://localhost:4000/api/type
+Content-Type: application/json
+
+{
+    "name": "Trà",
+    "status": true,
+    "photo": "",
+    "description": "Bạn đã quá quen thuộc với Bánh mì Việt Nam. Hãy nếm thử một miếng Bánh mì ngon, giòn, nóng hổi tại Coffee Fifteenth. Một kết hợp hoàn hảo giữa lớp nhân chua, cay, mặn, ngọt quyện với lớp vỏ bánh mì giòn tan, mịn màng tạo ra tầng tầng lớp lớp dư vị cho thực khách."
+}
+
+###Update sửa 1 loại sản phẩm
+PATCH http://localhost:4000/api/type/5fd422df08e4942baccd0efd
+Content-Type: application/json
+
+{"name": "Cà phê",
+    "description": "Sự kết hợp hoàn hảo giữa hạt cà phê Robusta & Arabica thượng hạng được trồng trên những vùng cao nguyên Việt Nam màu mỡ, qua những bí quyết rang xay độc đáo, Coffee Fifteenth chúng tôi tự hào giới thiệu những dòng sản phẩm Cà phê mang hương vị đậm đà và tinh tế."
+}
+
+### Get one lấy 1 loại sản phẩm
+GET http://localhost:4000/api/type/5fd422df08e4942baccd0efd
+
+### xóa 1 loại sản phẩm
+DELETE http://localhost:4000/api/type/5fb12f2a0dc0fa0accf4037a
+###
+
+
+###Update status: thay đổi status true/false active của loại sản phẩm
+PATCH  http://localhost:4000/api/type/status/5fd4243808e4942baccd0f00

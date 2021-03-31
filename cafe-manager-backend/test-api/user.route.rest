@@ -1,0 +1,37 @@
+### Get list of user
+GET http://localhost:4000/api/user?page=1&limit=2
+###
+
+### Get list of cashier
+GET http://localhost:4000/api/cashier?page=1&limit=2
+###
+
+### Get list of admin
+GET http://localhost:4000/api/admin?page=1&limit=2
+###
+
+### Get list of inventoryManager
+GET http://localhost:4000/api/inventoryManager?page=1&limit=2
+###
+
+PATCH http://localhost:4000/api/user/5fc36a5b7d5c071caccfebc5
+Content-Type: application/json
+
+{
+    "name": "gghgfhfgh",
+    "email": "gfgfgfdgd",
+    "phone" : "0987303619",
+    "username" : "truongtb19999"
+}
+
+###
+
+GET http://localhost:4000/api/user/5fd8d000ada09a4278aad846
+
+###
+DELETE http://localhost:4000/api/user/5fb0b1a2f373bc56c894f049
+###
+
+PATCH http://localhost:4000/api/user/deactive/5f952bed00ae142c4007d74d
+###
+GET http://localhost:4000/api/salestaff?page=1&limit=2

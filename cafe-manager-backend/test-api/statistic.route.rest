@@ -1,0 +1,5 @@
+### Get order begin end
+GET http://localhost:4000/api/statistic?begin=1607878800000&end=1608483599999
+
+### Get product sum
+GET http://localhost:4000/api/statistic/product

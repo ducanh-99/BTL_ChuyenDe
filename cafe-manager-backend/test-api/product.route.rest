@@ -1,0 +1,39 @@
+### Get 
+GET http://localhost:4000/api/product?typeId=5fd422df08e4942baccd0efd
+###
+
+POST http://localhost:4000/api/product
+Content-Type: application/json
+
+{
+    "productID": "BN100",
+    "name": "Bánh ngọt mê ly",
+    "description": "Bánh ngọt",
+    "status": false,
+    "price": 10000,
+    "type": "Bánh ngọt"
+}
+
+###
+
+PATCH http://localhost:4000/api/product/5fb1535a0ee16b1c5c3bfe30
+Content-Type: application/json
+
+{
+    "productID": "PHT",
+    "name": "Phindi Hồng Trà",
+    "description": "PhinDi Kem Sữa - Cà phê Phin thế hệ mới với chất Phin êm hơn, lần đầu tiên kết hợp cùng Hồng Trà mang đến hương vị quyện êm, phiên bản giới hạn chỉ trong mùa lễ hội 2020!",
+    "status": true,
+    "price": 39000,
+    "type": "5fd422df08e4942baccd0efd"
+}
+
+###
+
+GET http://localhost:4000/api/product/5fd65f4456d94b2d6c8e51e3
+
+###
+DELETE http://localhost:4000/api/product/5fb1535a0ee16b1c5c3bfe30
+###
+
+PATCH http://localhost:4000/api/product/deactive/5fb1535a0ee16b1c5c3bfe30

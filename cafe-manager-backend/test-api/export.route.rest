@@ -1,0 +1,39 @@
+### Get all các loại sản phẩm
+GET http://localhost:4000/api/exportMaterial
+
+###Save one: tạo mới 1 loại sản phẩm
+POST http://localhost:4000/api/exportMaterial
+Content-Type: application/json
+
+{
+    "name": "Nhập nguyên liệu 19 16/12",
+    "export": [
+        {
+            "material": "5fd96e4a1ad1483a04ec4e89",
+            "amount": 1
+        },
+        {
+            "material": "5fd973c30e18c73ba8f4b4ac",
+            "amount": 10
+        }
+    ]
+}
+
+###Update sửa 1 loại sản phẩm
+PATCH http://localhost:4000/api/exportMaterial/5fd422df08e4942baccd0efd
+Content-Type: application/json
+
+{"name": "Cà phê",
+    "description": "Sự kết hợp hoàn hảo giữa hạt cà phê Robusta & Arabica thượng hạng được trồng trên những vùng cao nguyên Việt Nam màu mỡ, qua những bí quyết rang xay độc đáo, Coffee Fifteenth chúng tôi tự hào giới thiệu những dòng sản phẩm Cà phê mang hương vị đậm đà và tinh tế."
+}
+
+### Get one lấy 1 loại sản phẩm
+GET http://localhost:4000/api/exportMaterial/5fd422df08e4942baccd0efd
+
+### xóa 1 loại sản phẩm
+DELETE http://localhost:4000/api/exportMaterial/5fb12f2a0dc0fa0accf4037a
+###
+
+
+###Update status: thay đổi status true/false active của loại sản phẩm
+PATCH  http://localhost:4000/api/exportMaterial/status/5fd4243808e4942baccd0f00

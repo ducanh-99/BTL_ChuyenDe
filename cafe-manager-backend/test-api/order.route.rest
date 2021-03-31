@@ -1,0 +1,74 @@
+### Get all order
+GET http://localhost:4000/api/order
+
+
+### tạo 1 order mới
+
+POST http://localhost:4000/api/order
+Content-Type: application/json
+
+{
+    "user": "5fd8d000ada09a4278aad846",
+    "table": "5fb2a8cf039b7554187ec327",
+    "order": [
+                {
+                "product": "5fd65f4456d94b2d6c8e51e3",
+                "amount" : 4
+                }
+            ]
+}
+
+### test email
+
+POST http://localhost:4000/api/orderemail
+Content-Type: application/json
+
+{
+    "email": "dvcuong99@gmail.com",
+    "table": "5fb2a8cf039b7554187ec327",
+    "order": [
+                {
+                "product": "5fd65f4456d94b2d6c8e51e3",
+                "amount" : 4
+                }
+            ]
+}
+
+### thêm sản phẩm vào order 
+
+PATCH http://localhost:4000/api/order/5fc91e03d329ced51849e227
+Content-Type: application/json
+
+{
+    "product": "5fb154d94990a839843f8941",
+    "amount" : 3
+}
+
+###//Getting 1 order có id tưởng ứng
+GET http://localhost:4000/api/order/5fc91e03d329ced51849e227
+
+###//Update status one: cập nhật tình trạng thanh toán của order
+PATCH http://localhost:4000/api/order/5fc91e03d329ced51849e227/status/paid
+
+### thêm 1 sản phẩm vào order 
+
+PATCH http://localhost:4000/api/order/5fc91e03d329ced51849e227/add
+Content-Type: application/json
+
+{
+    "order":
+                {
+                "product": "5fb154d94990a839843f8941",
+                "amount" : 3
+                }
+        
+}
+
+###//calculate one pass: tính tiền thanh toán
+GET http://localhost:4000/api/order/5fc91e03d329ced51849e227/calculate
+
+### xóa thanh toán (chỉ dành cho admin)
+DELETE http://localhost:4000/api/order/5fb1535a0ee16b1c5c3bfe30
+###
+
+PATCH http://localhost:4000/api/order/status/paid/5fc91e03d329ced51849e227
